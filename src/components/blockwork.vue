@@ -108,19 +108,19 @@ export default {
 
 .card {
   height: auto;
-  width: 45%;
+  width: 47%;
   margin: 49px 30px 150px 30px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
 .image-container {
-  transition: 0.3s ease-out;
 }
 
 .image-container img {
   width: 100%;
   height: auto;
+  transition: 0.3s ease-out;
 }
 
 .card:nth-of-type(5) {
@@ -150,7 +150,7 @@ export default {
 
 /* HOVER STATE */
 
-.card:hover .image-container {
+.card:hover img {
   transform: scale(1.05);
 }
 
