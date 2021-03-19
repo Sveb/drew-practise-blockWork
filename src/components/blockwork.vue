@@ -108,7 +108,7 @@ export default {
 
 .card {
   height: auto;
-  width: 47%;
+  width: 45%;
   margin: 49px 30px 150px 30px;
   box-sizing: border-box;
   overflow: hidden;
