@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+* {
+  margin: 0;
+}
+
 /* // fonts // */
 
 @font-face {
@@ -104,23 +108,28 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .card {
   height: auto;
-  width: 45%;
+  width: 46%;
   margin: 49px 30px 150px 30px;
-  box-sizing: border-box;
+
   overflow: hidden;
+  padding: 0px;
+  display: inline-block;
 }
 
 .image-container {
+  overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
   height: auto;
   transition: 0.3s ease-out;
+  display: block;
 }
 
 .card:nth-of-type(5) {
@@ -151,7 +160,7 @@ export default {
 /* HOVER STATE */
 
 .card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* BREAK POINT */
