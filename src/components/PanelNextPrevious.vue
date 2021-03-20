@@ -1,14 +1,18 @@
 <template lang="html">
-  <div
-    @mouseenter="cw()"
-    @mouseover="isHovering = true"
-    @mouseout="isHovering = false"
-    :class="{ hoveredPanel: isHovering }"
-    class="npPanel"
-  >
-    <h2>{{ title }}</h2>
-    <span class="arrow">&#x2197;</span>
-    <div class="breadcrumb">{{ text }}</div>
+  <div class="background-image-opacity-0">
+    <div
+      @mouseenter="cw()"
+      @mouseover="isHovering = true"
+      @mouseout="isHovering = false"
+      :class="{ hoveredPanel: isHovering }"
+      class="npPanel"
+    >
+      <div class="titelArrowContainer">
+        <h2>{{ title }}</h2>
+        <span>&#x2197;</span>
+      </div>
+      <div class="breadcrumb">{{ text }}</div>
+    </div>
   </div>
 </template>
 
@@ -37,6 +41,11 @@ export default {
   font-family: "zoom";
   src: url(../assets/fonts/zoom-pro-brutal-medium.woff);
 }
+
+.background-image-opacity-0 {
+  background-image: url("../assets/images/rover.jpeg");
+}
+
 .npPanel {
   font-family: zoom;
   font-size: 33px;
@@ -45,9 +54,10 @@ export default {
   align-items: center;
   flex-direction: column;
   text-transform: uppercase;
-  padding: 200px;
-  position: relative;
-
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 250px;
   transition: 0.1s;
 }
 
@@ -62,9 +72,12 @@ export default {
   font-size: 50px;
   padding: 15px;
   position: absolute;
-  top: 226px;
-  right: 150px;
+  bottom: -17px;
   transition: 0.1s;
+}
+
+.titelArrowContainer {
+  position: relative;
 }
 
 /* HOVER STATES */
@@ -86,7 +99,9 @@ export default {
 .breadcrumb {
   opacity: 0;
   color: #fff335;
-
   transition: 0.1s;
+  padding-top: 50px;
+  font-family: founders;
+  font-size: 62px;
 }
 </style>
