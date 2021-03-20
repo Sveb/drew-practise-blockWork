@@ -1,4 +1,5 @@
 <template>
+  <NPpanel />
   <blockwork
     title="Svebor"
     text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
@@ -8,18 +9,19 @@
 
 <script>
 import blockwork from "./components/blockwork.vue";
-
+import NPpanel from "./components/PanelNextPrevious.vue";
 export default {
   name: "App",
   components: {
-    blockwork
+    blockwork,
+    NPpanel
   }
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: founders, Calibri, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
