@@ -115,7 +115,6 @@ export default {
   height: auto;
   width: 46%;
   margin: 49px 30px 150px 30px;
-
   overflow: hidden;
   padding: 0px;
   display: inline-block;
@@ -165,9 +164,10 @@ export default {
 
 /* BREAK POINT */
 
-@media (max-width: 1364px) {
+@media (max-width: 1516px) {
   .container {
     flex-direction: column;
+    align-items: center;
   }
 }
 </style>
