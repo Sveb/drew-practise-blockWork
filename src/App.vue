@@ -12,6 +12,11 @@ import blockwork from "./components/blockwork.vue";
 import NPpanel from "./components/PanelNextPrevious.vue";
 export default {
   name: "App",
+  props: {
+    image: {
+      src: "../assets/images/jojo3.jpg"
+    }
+  },
   components: {
     blockwork,
     NPpanel

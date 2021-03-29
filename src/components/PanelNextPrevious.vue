@@ -1,6 +1,5 @@
 <template lang="html">
   <div
-    @mouseenter="cw()"
     @mouseover="isHovering = true"
     @mouseout="isHovering = false"
     :class="{ hoveredPanel: isHovering }"
@@ -13,9 +12,11 @@
       style="max-height: 700px;"
     />
     <div class="titelArrowContainer">
-      <h2>{{ title }}</h2>
-      <span class="span1">&#x2197;</span>
-      <span class="span2">&#8594;</span>
+      <a href="#">
+        <h2>{{ title }}</h2>
+        <span class="span1">&#x2197;</span>
+        <span class="span2">&#8594;</span>
+      </a>
     </div>
     <div class="breadcrumb">{{ text }}</div>
   </div>
@@ -50,7 +51,10 @@ export default {
 /* .background-image-opacity-0 {
   background-image: url("../assets/images/rover.jpeg");
 } */
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .npPanel {
   position: relative;
   font-family: zoom;
@@ -62,7 +66,7 @@ export default {
   text-transform: uppercase;
   width: 50%;
   height: auto;
-  margin: auto;
+  margin-bottom: 400px;
   padding: 200px;
 }
 

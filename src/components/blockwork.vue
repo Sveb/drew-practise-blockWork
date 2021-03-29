@@ -62,7 +62,6 @@
 export default {
   props: {
     image: {
-      // Mock: api.page
       type: Object,
       default: () => {}
     },
@@ -168,6 +167,9 @@ export default {
   .container {
     flex-direction: column;
     align-items: center;
+  }
+  .card {
+    width: 100%;
   }
 }
 </style>
