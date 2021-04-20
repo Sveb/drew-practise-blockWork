@@ -1,4 +1,5 @@
 <template lang="html">
+  And this is for compadre as well.
   <div class="container">
     <div class="card">
       <div class="image-container">

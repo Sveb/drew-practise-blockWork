@@ -1,4 +1,5 @@
 <template>
+  <hamburger/>
   <NPpanel />
   <blockwork
     title="Svebor"
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import hamburger from "./components/hamburger.vue";
 import blockwork from "./components/blockwork.vue";
 import NPpanel from "./components/PanelNextPrevious.vue";
 export default {
@@ -19,7 +21,8 @@ export default {
   },
   components: {
     blockwork,
-    NPpanel
+    NPpanel,
+    hamburger
   }
 };
 </script>

@@ -1,5 +1,6 @@
 <template lang="html">
-  <div
+I made this for compadre I believe . 
+<div
     @mouseover="isHovering = true"
     @mouseout="isHovering = false"
     :class="{ hoveredPanel: isHovering }"
